@@ -24,7 +24,7 @@ app.use('/user/:username',express.static(__dirname + "/client"));
 app.use(express.urlencoded({ extended: true }));
 
 // подключаемся к хранилищу данных Amazeriffic в Mongo
-mongoose.connect('mongodb://localhost/amazeriffic', {
+mongoose.connect('mongodb://127.0.0.1:27017/amazeriffic', {
 		useNewUrlParser: true,
 		//useCreateIndex: true,
 		useUnifiedTopology: true 
